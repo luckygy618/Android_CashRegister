@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GuoYuCao_lab2_CashierApp</string>
+
+    <string name="buy">Thank you for your purchase.</string>
+    <string name="purchase_prefix">Your purchase is \ </string>
+    <string name="detail_name">Product:</string>
+    <string name="detail_price">Price:</string>
+    <string name="detail_date">Purchase Date:</string>
+    <string name="asd">aaaasdasdasdasd</string>
+
+
+</resources>
