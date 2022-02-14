@@ -154,7 +154,6 @@ public class MainActivity  extends AppCompatActivity {
         sb.append(item.getStock()).append(' ');
         sb.append(item.getName()).append(' ').append(" for ");
         sb.append(item.getPrice()).append(" .");
-
         dialogBuilder.setMessage(sb.toString());
         dialogBuilder.show();
 
