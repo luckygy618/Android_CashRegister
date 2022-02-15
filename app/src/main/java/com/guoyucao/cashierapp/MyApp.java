@@ -11,6 +11,23 @@ public class MyApp extends Application {
     ProductManager productManager = new ProductManager();
     HistoryManager historyManager = new HistoryManager();
 
+    public void setHistoryManager(HistoryManager historyManager) {
+        this.historyManager = historyManager;
+    }
+
+
+
+
+    public ProductManager getProductManager() {
+        return productManager;
+    }
+
+
+    public void setProductManager(ProductManager productManager) {
+        this.productManager = productManager;
+    }
+
+
     public void setStock( ArrayList<Product> list){
         productManager.setProducts(list);
     }

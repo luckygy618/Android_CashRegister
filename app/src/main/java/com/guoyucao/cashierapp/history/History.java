@@ -33,6 +33,11 @@ public class History {
         return date;
     }
 
+    public void setDate(String date) {
+        this.date = date;
+    }
 
-
+    public void setItem(Product item) {
+        this.item = item;
+    }
 }

@@ -163,7 +163,6 @@ public class MainActivity  extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-
         outState.putInt("position", pos);
         outState.putInt("picker", (int)numberPicker.getValue());
     }
@@ -172,8 +171,10 @@ public class MainActivity  extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onRestoreInstanceState(savedInstanceState);
-        resumeData(list.get((Integer) savedInstanceState.get("position")), (Integer) savedInstanceState.get("picker"));
-
+        pos = (int)savedInstanceState.get("position");
+        p = list.get(pos);
+        int i = (int)savedInstanceState.get("picker");
+        resumeData(p,i);
     }
 
     private void resumeData(Product item,int num){
