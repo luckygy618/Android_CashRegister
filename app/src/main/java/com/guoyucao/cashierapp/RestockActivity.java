@@ -83,9 +83,29 @@ public class RestockActivity extends AppCompatActivity {
             }
         });
 
+    }
 
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        String s = editText.getText().toString().trim();
+        outState.putString("number", s);
+        outState.putInt("position", pos);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onRestoreInstanceState(savedInstanceState);
+        pos = (int)savedInstanceState.get("position");
+        p = list.get(pos);
+        editText.setText((String)savedInstanceState.get("number"));
 
 
 
     }
+
+
+
 }
